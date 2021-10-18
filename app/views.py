@@ -24,7 +24,7 @@ def time_view(request):
     msg = f'Текущее время: {current_time}'
     return HttpResponse(msg)
 
-g
+
 def workdir_view(request):
     path = Path(f'./')
     msg = "<br>-".join([str(p) for p in path.iterdir()])
